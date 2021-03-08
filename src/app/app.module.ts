@@ -12,6 +12,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { ToDoListModule } from './to-do-list/to-do-list.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatSidenavModule,
     MatDividerModule,
     MatListModule,
-    MatTooltipModule
+    MatTooltipModule,
+    ToDoListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
