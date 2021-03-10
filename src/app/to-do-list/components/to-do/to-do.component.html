@@ -1,5 +1,6 @@
-<mat-selection-list #shoes>
-  <mat-list-option *ngFor="let shoe of typesOfShoes">
-    {{shoe}}
+<mat-selection-list #List
+  (selectionChange)="deleteItem(List.selectedOptions.selected[List.selectedOptions.selected.length - 1].value)">
+  <mat-list-option *ngFor="let element of toDoList" [value]="element">
+    {{element.title}}
   </mat-list-option>
 </mat-selection-list>

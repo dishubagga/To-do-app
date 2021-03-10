@@ -11,10 +11,10 @@ export class DataService {
   constructor(private httpClient: HttpClient) { }
 
   getData(): Observable<any> {
-    return this.httpClient.get<any>(this._URL).pipe(catchError(this._handleError));
+    return this.httpClient.get<any>(this._URL).pipe(catchError(this.handleError));
   }
 
-  private _handleError(error: HttpErrorResponse) {
+  private handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {
       console.error('An error occurred:', error.error.message);
     } else {

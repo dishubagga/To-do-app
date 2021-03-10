@@ -5,6 +5,8 @@ import { ToDoListRoutingModule } from './to-do-list-routing.module';
 import { MatListModule } from '@angular/material/list';
 import { HttpClientModule } from '@angular/common/http';
 import { DataService } from './services/data/data.service';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -14,7 +16,9 @@ import { DataService } from './services/data/data.service';
     CommonModule,
     ToDoListRoutingModule,
     MatListModule,
-    HttpClientModule
+    HttpClientModule,
+    MatPaginatorModule,
+    FormsModule,
   ],
   providers: [DataService]
 })

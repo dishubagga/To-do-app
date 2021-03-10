@@ -30,7 +30,8 @@ import { ToDoListModule } from './to-do-list/to-do-list.module';
     MatDividerModule,
     MatListModule,
     MatTooltipModule,
-    ToDoListModule
+    ToDoListModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
